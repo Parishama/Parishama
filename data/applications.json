@@ -1,0 +1,31 @@
+{
+  "APP-123456": {
+    "app_id": "APP-123456",
+    "applicant": "GreenCharge Co.",
+    "status": "Under Review",
+    "progress": [
+      {
+        "message": "Application received"
+      },
+      {
+        "message": "Initial compliance check passed"
+      },
+      {
+        "message": "contractor selected and equipment ordered"
+      }
+    ]
+  },
+  "APP-100200": {
+    "app_id": "APP-100200",
+    "applicant": "City Mall Parking",
+    "status": "Awaiting Documents",
+    "progress": [
+      {
+        "message": "Application received"
+      },
+      {
+        "message": "Request for site plan and single-line diagram issued"
+      }
+    ]
+  }
+}

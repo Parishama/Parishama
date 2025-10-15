@@ -1,0 +1,34 @@
+{
+  "faq": [
+    {
+      "id": "find_station",
+      "question": "How can I find nearby EV charging stations?",
+      "answer": "Use your city's official EV map or apps like PlugShare or Google Maps. Filter by connector type (CCS, CHAdeMO, Type 2) and power level."
+    },
+    {
+      "id": "cost",
+      "question": "How much does charging cost?",
+      "answer": "Prices vary by operator. Typical DC fast charging is priced per kWh or per minute. Many public Level 2 chargers are free or low-cost. Check the operator's app or on-site signage."
+    },
+    {
+      "id": "hours",
+      "question": "When are charging stations open?",
+      "answer": "Most public stations are available 24/7, but access and parking rules can vary. Always check the site details in the app or with the operator."
+    },
+    {
+      "id": "incentives",
+      "question": "Are there grants or incentives for installing a charger?",
+      "answer": "Yes. Government programs often offer grants, tax credits, or rebates for eligible sites. See the 'Apply to set up a station' guidance for the latest programs."
+    },
+    {
+      "id": "requirements",
+      "question": "What are the technical requirements to install a station?",
+      "answer": "Requirements typically include certified hardware, appropriate connector types, safety compliance, accessibility, and OCPP networking. Power capacity and grid upgrades may be required."
+    },
+    {
+      "id": "apply",
+      "question": "How do I apply to set up an EV charging station?",
+      "answer": "Prepare site details (address, power capacity, proposed connectors), ownership documentation, and a plan for operations. Submit an application via the government portal. You will receive an application ID like APP-123456 to track status."
+    }
+  ]
+}
