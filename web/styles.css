@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, Arial, sans-serif; margin: 0; background: #f4f6f8; color: #1f2937; }
+header { background: #0ea5e9; color: white; padding: 16px 20px; }
+header h1 { margin: 0 0 4px 0; font-size: 22px; }
+main { max-width: 960px; margin: 24px auto; padding: 0 16px; display: grid; gap: 16px; }
+.card { background: white; border-radius: 8px; padding: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+.row { display: flex; gap: 8px; }
+.row input { flex: 1; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; }
+input, button { padding: 10px 12px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 14px; }
+button { background: #0ea5e9; color: white; border: none; cursor: pointer; }
+button:hover { background: #0284c7; }
+.result { margin-top: 8px; white-space: pre-wrap; }
+.chat-box { height: 220px; overflow: auto; border: 1px solid #e5e7eb; border-radius: 6px; padding: 8px; margin-bottom: 8px; background: #fafafa; }
+.msg { max-width: 80%; margin: 6px 0; padding: 8px 10px; border-radius: 8px; }
+.msg.user { background: #e0f2fe; margin-left: auto; }
+.msg.bot { background: #f1f5f9; margin-right: auto; }
+footer { text-align: center; padding: 24px; color: #6b7280; }

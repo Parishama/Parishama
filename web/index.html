@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EV Charging Government Assistant</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>EV Charging Government Assistant</h1>
+    <p>Get info, apply to set up stations, and track progress.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Chat</h2>
+      <div id="chat-box" class="chat-box"></div>
+      <div class="row">
+        <input id="chat-input" type="text" placeholder="Ask a question (e.g., 'How to apply?')" />
+        <button id="chat-send">Send</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Apply to Set Up a Station</h2>
+      <div class="grid">
+        <label>Applicant Name <input id="applicant" type="text" /></label>
+        <label>Site Address <input id="site_address" type="text" /></label>
+        <label>Connectors <input id="connectors" type="text" placeholder="CCS, Type 2, CHAdeMO" /></label>
+        <label>Power (kW) <input id="power_kw" type="number" min="1" max="1000" /></label>
+        <label>Notes <input id="notes" type="text" /></label>
+      </div>
+      <button id="submit-app">Submit Application</button>
+      <p id="app-result" class="result"></p>
+    </section>
+
+    <section class="card">
+      <h2>Check Application</h2>
+      <div class="row">
+        <input id="status-app-id" type="text" placeholder="APP-123456" />
+        <button id="check-status">Check</button>
+      </div>
+      <pre id="status-result" class="result"></pre>
+    </section>
+
+    <section class="card">
+      <h2>Add Progress Update</h2>
+      <div class="row">
+        <input id="progress-app-id" type="text" placeholder="APP-123456" />
+        <input id="progress-message" type="text" placeholder="e.g., Equipment delivered" />
+        <button id="add-progress">Add</button>
+      </div>
+      <p id="progress-result" class="result"></p>
+    </section>
+  </main>
+
+  <footer>
+    <small>Demo only. Do not submit sensitive information.</small>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
