@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EV Charging Government Assistant</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>EV Charging Government Assistant</h1>
+      <p>Ask about chargers, costs, incentives, and manage applications.</p>
+    </header>
+
+    <main class="grid">
+      <section class="card" id="chat-card">
+        <h2>Chat</h2>
+        <div id="chat-log" class="chat-log"></div>
+        <div class="row">
+          <input id="chat-input" type="text" placeholder="Type your message..." />
+          <button id="chat-send">Send</button>
+        </div>
+        <p class="hint">Examples: "find charging station near me", "status of APP-123456", "update APP-123456: contractor selected"</p>
+      </section>
+
+      <section class="card">
+        <h2>Create Application</h2>
+        <form id="app-form">
+          <label>Applicant <input name="applicant" required /></label>
+          <label>Site address <input name="site_address" required /></label>
+          <label>Power capacity (kW) <input name="power_capacity_kw" type="number" min="1" required /></label>
+          <label>Connectors (comma separated) <input name="connectors" placeholder="CCS, Type 2" /></label>
+          <label>Contact email <input name="contact_email" type="email" /></label>
+          <label>Notes <textarea name="notes"></textarea></label>
+          <button type="submit">Create</button>
+        </form>
+        <div id="create-result"></div>
+      </section>
+
+      <section class="card">
+        <h2>Lookup Application</h2>
+        <div class="row">
+          <input id="lookup-id" placeholder="APP-123456" />
+          <button id="lookup-btn">Lookup</button>
+        </div>
+        <pre id="app-json" class="json"></pre>
+        <h3>Update Status</h3>
+        <div class="row">
+          <input id="status-text" placeholder="Under Review / Approved / Rejected" />
+          <button id="status-btn">Update Status</button>
+        </div>
+        <h3>Add Progress Note</h3>
+        <div class="row">
+          <input id="progress-text" placeholder="e.g., Contractor selected" />
+          <button id="progress-btn">Add Note</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
